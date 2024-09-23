@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Web Page</title>
+
+    <!-- CSS for animation effects -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f0f8ff;
+        }
+
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        /* Keyframes for fading in the heading */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #4CAF50;
+            margin: 50px auto;
+            border-radius: 10px;
+            animation: growBox 2s infinite alternate ease-in-out;
+        }
+
+        /* Keyframes for scaling box size */
+        @keyframes growBox {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.3); }
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #008CBA;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005f6b;
+        }
+
+        /* Animate button on click */
+        button:active {
+            transform: scale(0.9);
+        }
+
+        .animated-text {
+            display: inline-block;
+            animation: slideText 4s ease-in-out infinite;
+            font-size: 1.5em;
+            color: #FF4500;
+        }
+
+        /* Keyframes for sliding text left and right */
+        @keyframes slideText {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(100px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Animated Page</h1>
+
+    <!-- Animated box -->
+    <div class="box"></div>
+
+    <!-- Animated text -->
+    <div class="animated-text">Watch me move!</div>
+
+    <br><br>
+
+    <!-- Button with hover and click effects -->
+    <button onclick="showMessage()">Click Me!</button>
+
+    <!-- JavaScript for button action -->
+    <script>
+        function showMessage() {
+            alert("You clicked the button!");
+        }
+    </script>
+
+</body>
+</html>

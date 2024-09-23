@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>String Operations</h1>
+    
+    <p id="characterAt">Character at index 3: </p>
+    <p id="unicodeValue">Unicode of character at index 3: </p>
+    <p id="joinedString">Joined String: </p>
+    <p id="unicodeToString">Unicode value to String: </p>
+    <p id="upperCaseString">Uppercase String: </p>
+
+    <script>
+        const str = "Hello, World!";
+        
+        // (1) Returning the character at a specified location
+        const characterAtIndex = str.charAt(3);
+        document.getElementById("characterAt").textContent += characterAtIndex;
+
+        // (2) Returns the unicode of the character at the specified index
+        const unicodeValue = str.charCodeAt(3);
+        document.getElementById("unicodeValue").textContent += unicodeValue;
+
+        // (3) Joins two or more strings and returns a new joined string
+        const str1 = "Hello";
+        const str2 = "World";
+        const joinedString = str1 + " " + str2;
+        document.getElementById("joinedString").textContent += joinedString;
+
+        // (4) Converts unicode value to string
+        const unicodeToString = String.fromCharCode(unicodeValue);
+        document.getElementById("unicodeToString").textContent += unicodeToString;
+
+        // (5) Converts a string to uppercase letters
+        const upperCaseString = str.toUpperCase();
+        document.getElementById("upperCaseString").textContent += upperCaseString;
+
+    </script>
+
+</body>
+</html>

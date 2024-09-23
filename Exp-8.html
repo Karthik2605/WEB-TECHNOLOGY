@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Number Operations</title>
+</head>
+<body>
+
+    <h2>JavaScript Number Operations</h2>
+
+    <p id="exponential"></p>
+    <p id="limited-decimal"></p>
+    <p id="number-string"></p>
+    <p id="negative-infinity"></p>
+
+    <button onclick="performOperations()">Perform Operations</button>
+
+    <script>
+        function performOperations() {
+            // Exponential value
+            let num = 5;
+            document.getElementById('exponential').innerHTML = "Exponential value of 5: " + num.toExponential();
+
+            // Limit digits after decimal
+            let decimalNum = 3.14159;
+            document.getElementById('limited-decimal').innerHTML = "Limited to 2 decimal places: " + decimalNum.toFixed(2);
+
+            // Convert number to string
+            let numToStr = 12345;
+            document.getElementById('number-string').innerHTML = "Number as string: " + numToStr.toString();
+
+            // Return negative infinity
+            document.getElementById('negative-infinity').innerHTML = "Negative Infinity: " + Number.NEGATIVE_INFINITY;
+        }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date and Time</title>
+    <script>
+        function displayDateTime() {
+            // Get the current date and time
+            var currentDateTime = new Date();
+
+            // Extract the date and time components
+            var date = currentDateTime.toLocaleDateString();
+            var time = currentDateTime.toLocaleTimeString();
+
+            // Display the date and time on the webpage
+            document.getElementById("date").innerHTML = "Current Date: " + date;
+            document.getElementById("time").innerHTML = "Current Time: " + time;
+        }
+    </script>
+</head>
+<body onload="displayDateTime()">
+
+    <h1>System's Current Date and Time</h1>
+    <p id="date"></p>
+    <p id="time"></p>
+
+</body>
+</html>

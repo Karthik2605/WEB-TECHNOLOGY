@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameset Example</title>
+</head>
+<frameset rows="30%,70%">
+    <!-- First frame will be the top 30% -->
+    <frame src="header.html">
+    
+    <!-- Second frame will be split into two columns -->
+    <frameset cols="50%,50%">
+        <frame src="menu.html">
+        <frame src="content.html">
+    </frameset>
+</frameset>
+<noframes>
+    Your browser does not support frames.
+</noframes>
+</html>

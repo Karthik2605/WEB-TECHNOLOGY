@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Positioning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fixed Size for Emojis */
+        .emoji {
+            font-size: 50px;
+        }
+
+        /* Positioning Elements */
+        .relative {
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            right: 20px;
+            top: 50px;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Fixed Size Emojis with CSS Positioning</h1>
+
+    <!-- Emojis with fixed size and different positioning -->
+    <p class="emoji relative">😊 This emoji is relatively positioned.</p>
+    <p class="emoji absolute">🚀 This emoji is absolutely positioned.</p>
+    <p class="emoji fixed">🌍 This emoji is fixed at the bottom-left corner.</p>
+
+</body>
+</html>
